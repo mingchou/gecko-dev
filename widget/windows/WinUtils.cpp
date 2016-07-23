@@ -1065,6 +1065,14 @@ WinUtils::GetMouseInputSource()
 }
 
 /* static */
+uint16_t
+WinUtils::GetMouseInputID()
+{
+  LPARAM lParamExtraInfo = ::GetMessageExtraInfo();
+  return lParamExtraInfo & 0x7f;
+}
+
+/* static */
 bool
 WinUtils::GetIsMouseFromTouch(EventMessage aEventMessage)
 {

@@ -79,6 +79,7 @@ protected:
     , pressure(0)
     , hitCluster(false)
     , inputSource(nsIDOMMouseEvent::MOZ_SOURCE_MOUSE)
+    , inputID(0)
   {
   }
 
@@ -90,6 +91,7 @@ protected:
     , pressure(0)
     , hitCluster(false)
     , inputSource(nsIDOMMouseEvent::MOZ_SOURCE_MOUSE)
+    , inputID(0)
  {
  }
 
@@ -138,6 +140,9 @@ public:
 
   // Possible values at nsIDOMMouseEvent
   uint16_t inputSource;
+
+  //
+  uint16_t inputID;
 
   // ID of the canvas HitRegion
   nsString region;

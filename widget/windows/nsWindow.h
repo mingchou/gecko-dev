@@ -223,10 +223,9 @@ public:
                             WPARAM wParam,
                             LPARAM lParam,
                             bool aIsContextMenuKey = false,
-                            int16_t aButton =
-                              mozilla::WidgetMouseEvent::eLeftButton,
-                            uint16_t aInputSource =
-                              nsIDOMMouseEvent::MOZ_SOURCE_MOUSE);
+                            int16_t aButton = mozilla::WidgetMouseEvent::eLeftButton,
+                            uint16_t aInputSource = nsIDOMMouseEvent::MOZ_SOURCE_MOUSE,
+                            uint16_t aInputID = 0);
   virtual bool            DispatchWindowEvent(mozilla::WidgetGUIEvent* aEvent,
                                               nsEventStatus& aStatus);
   void                    DispatchPendingEvents();

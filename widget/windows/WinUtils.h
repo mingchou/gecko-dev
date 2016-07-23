@@ -382,6 +382,12 @@ public:
    */
   static uint16_t GetMouseInputSource();
 
+  /**
+   *
+   */
+  static uint16_t GetMouseInputID();
+
+
   static bool GetIsMouseFromTouch(EventMessage aEventType);
 
   /**

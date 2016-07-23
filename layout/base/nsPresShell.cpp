@@ -7150,6 +7150,8 @@ DispatchPointerFromMouseOrTouch(PresShell* aShell,
     }
 
     WidgetPointerEvent event(*mouseEvent);
+    event.pointerId = mouseEvent->inputID;
+    event.inputSource = mouseEvent->inputSource;
     event.mMessage = pointerMessage;
     event.button = button;
     event.pressure = event.buttons ?

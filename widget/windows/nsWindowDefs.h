@@ -37,6 +37,7 @@
 #define TABLET_INK_CHECK     0xFF515700
 #define TABLET_INK_TOUCH     0x00000080
 #define MOUSE_INPUT_SOURCE() WinUtils::GetMouseInputSource()
+#define MOUSE_INPUT_ID()     WinUtils::GetMouseInputID()
 
 /**************************************************************
  *
